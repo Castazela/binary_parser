@@ -5,6 +5,5 @@ def binary_to_decimal(number: str) -> int:
     for i in range(len(binary)):
         equation = binary[i]*(2**i)
         decimal.append(equation)
-    print(decimal)
     decimal = sum(decimal)
     return decimal
