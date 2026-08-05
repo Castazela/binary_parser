@@ -1,7 +1,11 @@
-def decimal_to_binary(number: str) -> int:
+def decimal_to_binary(number: str) -> str:
     nb = int(number)
     binary = []
+    test = [nb]
     while nb != 0:
         binary.append(nb % 2)
         nb = int(nb/2)
-    return int(''.join(map(str, binary)))
+        test.append(nb)
+    binary[::-1]
+    binary = list(map(str, binary))
+    return ''.join(binary)
