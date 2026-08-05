@@ -1,1 +1,1 @@
-# binary_parser
+Convert decimal to binary and binary to decimal
