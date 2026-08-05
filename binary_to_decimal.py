@@ -1,0 +1,8 @@
+def binary_to_decimal(number: str) -> int:
+    binary = [int(x) for x in list(number)]
+    decimal = []
+    for i in range(len(binary)):
+        equation = binary[i]*(2**i)
+        decimal.append(equation)
+    decimal = sum(decimal)
+    return decimal
