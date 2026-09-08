@@ -3,7 +3,7 @@ from decimal_to_binary import decimal_to_binary
 
 # Vous voulez faire quoi ?
 print("Quel convertisseur voulez-vous utiliser ?")
-print("1. Entier -> Binaire \n2. Binaire -> Entier")
+print("1. Entier vers Binaire \n2. Binaire vers Entier")
 choix = input()
 
 # Convertir décimal -> binaire
