@@ -3,15 +3,17 @@ from decimal_to_binary import decimal_to_binary
 
 # Vous voulez faire quoi ?
 print("Quel convertisseur voulez-vous utiliser ?")
-print("1. Décimal -> Binaire \n2. Binaire -> Décimal")
+print("1. Entier -> Binaire \n2. Binaire -> Entier")
 choix = input()
 
 # Convertir décimal -> binaire
 if choix == '1':
-    print("Donnez votre nombre décimal")
+    print("Donnez votre nombre entier")
     decimal_number = input()
-    print(decimal_to_binary(decimal_number))
+    print("Votre nombre converti en binaire donne :",
+          decimal_to_binary(decimal_number))
 else:
     print("Donnez votre nombre binaire")
     binary_number = input()
-    print(binary_to_decimal(binary_number))
+    print("Votre nombre converti en  nombre entier donne :",
+          binary_to_decimal(binary_number))
