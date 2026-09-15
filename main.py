@@ -10,10 +10,12 @@ choix = input()
 if choix == '1':
     print("Donnez votre nombre entier")
     decimal_number = input()
-    print("Votre nombre converti en binaire donne :",
+    print(decimal_number,
+          "convertit en binaire est :",
           decimal_to_binary(decimal_number))
 else:
     print("Donnez votre nombre binaire")
     binary_number = input()
-    print("Votre nombre converti en  nombre entier donne :",
+    print(binary_number,
+          "convertit en nombre entier est :",
           binary_to_decimal(binary_number))
