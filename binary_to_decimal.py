@@ -12,7 +12,9 @@ def binary_to_decimal(number: str) -> int:
             >>> birary_to_decimal(12)
             '1100'
         """
-    binary = [int(x) for x in list(number)]
+    binary = [int(x) for x in list(
+        number)]  # Compréhension de liste transformant number en liste appelée binary
+    # Permet de retourner la chaîne de caractère --> ex : 100110 devient 011001
     binary = binary[::-1]
     decimal = []
     for i in range(len(binary)):
